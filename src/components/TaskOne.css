@@ -1,0 +1,91 @@
+/* end sideMenu */
+.sideMenu{
+    box-shadow: 1px 0 5px 1px lightgray;
+}
+.userCircle{
+    background-color: #1D4ED8;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+}
+/* end sideMenu */
+
+/* start theForm */
+.theForm{
+    font-family: 'Inter', sans-serif;
+}
+.titles{
+    box-shadow: 0 1px 5px 0 lightgray;
+}
+.WorkFlowtTitle{
+    position: relative;
+}
+.WorkFlowtTitle::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 50%;
+    right: 0;
+    top: 50%;
+    background-color: #C4C4C4;
+    transform: translateY(-50%);
+}
+.ApplicationFormTitle{
+    background-color: #00635B;
+    color: white;
+    position: relative;
+}
+.ApplicationFormTitle::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent transparent transparent #00635B;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* end theForm */
+
+/* start imgContainer */
+.imgContainer{
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0 5px 1px lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.imgContainer h4{
+    background-color: #D0F7FA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.imgContainer label{
+    border: 1px dashed black;
+
+}
+.imgContainer label p{
+    color: #979797;
+}
+.img-box{
+    height: 264px;
+}
+.imgDelete{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.imgDelete:hover{
+    color: red;
+}
+
+/* end imgContainer */
