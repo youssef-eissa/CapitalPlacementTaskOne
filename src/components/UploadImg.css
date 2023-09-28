@@ -1,0 +1,39 @@
+.imgContainer {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0 5px 1px lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.imgContainer h4 {
+    background-color: #D0F7FA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.imgContainer label {
+    border: 1px dashed black;
+
+}
+
+.imgContainer label p {
+    color: #979797;
+}
+
+.img-box {
+    height: 264px;
+}
+
+.imgDelete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imgDelete:hover {
+    color: red;
+}

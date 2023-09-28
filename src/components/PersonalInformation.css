@@ -1,0 +1,41 @@
+.personalInformation {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0 5px 1px lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.personalInformation h4 {
+    background-color: #D0F7FA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.RowOfData:not(:last-child) {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.RowOfData:nth-last-child(2),
+.profile .RowOfData:nth-last-child(3) {
+    border: none;
+}
+
+.RowOfData:nth-last-child(1) {
+    padding: 0 !important;
+    display: none !important;
+
+}
+
+.inputPersonalQuestion {
+    border: 1px solid #C4C4C4;
+}
+
+.inputPersonalQuestion:focus {
+    outline: none;
+}
+
+.btnSave {
+    color: white;
+    background-color: #087B2F;
+    border: none;
+}

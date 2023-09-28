@@ -65,7 +65,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
                     mandatory: boolean;
                     show: boolean;
                 },
-                profileQuestions: {
+                profileQuestions: [{
                     id: string;
                     type: string;
                     question: string;
@@ -73,7 +73,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
                     maxChoice: number;
                     disqualify: boolean;
                     other: boolean;
-                },
+                }],
             }
             customisedQuestions: {
                 id: string;

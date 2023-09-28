@@ -11,19 +11,19 @@ import { useUpdateDataMutation } from '../../Redux/DataApi';
 
 
 
-export default function BasicSelect() {
+export default function ProfileBasicSelect() {
     const[sendData,setSendData]=React.useState<any>()
     const [Save]=useUpdateDataMutation()
     const {data:allData,isSuccess}=useGetDataQuery()
     const [questionInput, setQuestionInput] = React.useState<string>('')
-    const [choices, setChoices] = React.useState(allData?.data.attributes.personalInformation.personalQuestions[0].choices)
-    const [personalQuestions,setPersonalQuestions]=React.useState<any>()
+    const [choices, setChoices] = React.useState(allData?.data.attributes.profile.profileQuestions[0].choices)
+    const [ProfileQuestions,setProfileQuestions]=React.useState<any>()
 
     React.useEffect(() => {
         if (isSuccess) {
             const allQuestionsArray = Object.values(PersonalQuestions)
             setChoices(allQuestionsArray)
-            setPersonalQuestions(allData?.data.attributes.personalInformation.personalQuestions)
+            setProfileQuestions(allData?.data.attributes.personalInformation.personalQuestions)
             setSendData(allData)
         }
     }, [isSuccess, allData])
@@ -32,7 +32,6 @@ const [currentQuestion, setCurrentQuestion] = React.useState('');
 
     const handleChange = (event: SelectChangeEvent) => {
     setCurrentQuestion(event.target.value as string);
-
     };
 
     function handleSave() {
@@ -44,16 +43,13 @@ const [currentQuestion, setCurrentQuestion] = React.useState('');
         other: false,
         question: questionInput,
         type:currentQuestion
-
     }
-        setPersonalQuestions([...personalQuestions, NewItem])
+        setProfileQuestions([...ProfileQuestions, NewItem])
         setQuestionInput('')
-
         Save(sendData)
+        console.log(ProfileQuestions);
+        
     }
-
-
-
 return (
     <Box sx={{ width: '100%' }}>
     <FormControl  fullWidth>

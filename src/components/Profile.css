@@ -1,0 +1,12 @@
+.profile {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0 5px 1px lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.profile h4 {
+    background-color: #D0F7FA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
