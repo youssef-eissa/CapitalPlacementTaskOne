@@ -1,0 +1,18 @@
+.AdditionalQuestions {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 0 5px 1px lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.AdditionalQuestions h4 {
+    background-color: #D0F7FA;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.AdditionalQuestionsContainer > div:not(:last-child){
+    border-bottom: 1px solid #c4c4c4;
+}
+.AdditionalQuestions input:focus{
+outline: none;
+}

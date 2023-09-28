@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
- export interface IData{
+export interface IData{
     data: {
         id: string;
         type: string;

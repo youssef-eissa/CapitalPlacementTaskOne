@@ -10,7 +10,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useUpdateDataMutation } from '../../Redux/DataApi';
 
 
-
 export default function ProfileBasicSelect() {
     const[sendData,setSendData]=React.useState<any>()
     const [Save]=useUpdateDataMutation()
@@ -47,8 +46,6 @@ const [currentQuestion, setCurrentQuestion] = React.useState('');
         setProfileQuestions([...ProfileQuestions, NewItem])
         setQuestionInput('')
         Save(sendData)
-        console.log(ProfileQuestions);
-        
     }
 return (
     <Box sx={{ width: '100%' }}>

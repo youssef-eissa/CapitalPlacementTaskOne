@@ -6,6 +6,7 @@ import ListAltOutlinedIcon from '@mui/icons-material/ListAltOutlined';
 import { PersonalInformation } from './PersonalInformation';
 import { UploadImg } from './UploadImg';
 import { Profile } from './Profile';
+import { AdditionalQuestions } from './AdditionalQuestions';
 export interface IProps {
 
 }
@@ -25,7 +26,7 @@ return (
     <div style={{backgroundColor:'white'}} className='container  '>
         <div className='row'>
             <div className='col-12 d-flex p-0'>
-                <div className='col-1 sideMenu h-75 position-relative  p-2 d-flex flex-column align-items-center'>
+                <div  className='col-1 h-50 sideMenu position-relative  p-2 d-flex flex-column align-items-center'>
                 <div className='col-10 d-flex justify-content-center mb-5'><MenuIcon fontSize='large'/></div>
                 <div className='col-10 d-flex justify-content-center mb-3 '><HomeOutlinedIcon fontSize='large'/></div>
                 <div className='col-10 d-flex justify-content-center'><ListAltOutlinedIcon fontSize='large'/></div>
@@ -43,7 +44,8 @@ return (
                     </div>
                     <UploadImg/>
                     <PersonalInformation/>
-                <Profile/>
+                    <Profile/>
+                    <AdditionalQuestions/>
                 </div>
             </div>
     </div>
